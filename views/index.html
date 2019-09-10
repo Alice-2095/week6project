@@ -1,0 +1,42 @@
+<html>
+      <head>
+            <link rel="stylesheet" href="styles.css">
+    </head>
+   <body>
+
+      <img src="logo.jpeg" width="120" height="100">
+      <h1>Insert new task/developer </h1>
+      <br>
+      <h2>
+          <a href = "/getTask" >Get task</a>
+          <a href = "/getDeveloper" >Get developer</a>
+          <a href = "/deleteTask" >Delete task</a>
+          <a href = "/updateTaskStatus" >Update task status</a><br>
+      </h2>
+
+      <form action = "/insertnewdeveloper" method ="POST">
+        Name<br>
+        First name <input type="text" name= "fname" /><br><br>
+        Last name <input type="text" name= "lname" /><br><br>
+        Level <input type="radio" name="level" value="Beginner"> Beginner
+                    <input type="radio" name="level" value="Expert">Expert<br><br>
+        Address<br>
+        State <input type="text" name= "state"/><br><br>
+        Suburb  <input type="text" name= "suburb"/><br><br>
+        Street  <input type="text" name= "street"/><br><br>    
+        Unit <input type="number" name= "unit"/><br><br>
+        <button>Submit</button><br><br>
+      </form>
+
+
+      <form action = "/insertnewtask" method ="POST">
+        Task name <input type="text" name= "tname" /><br><br>
+        Assign to <input type="text" name= "assignto" /><br><br>
+        Due date  <input type="date" name= "duedate"/><br><br>
+        Task status <input type="radio" name="taskstatus" value="InProgress"> InProgress
+                    <input type="radio" name="taskstatus" value="Complete">Complete<br><br>
+        Task Desc <input type="text" name= "taskdescr"/><br><br>
+        <button>Submit</button1>
+      </form>
+   </body>
+</html>

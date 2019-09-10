@@ -1,0 +1,47 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="styles.css">
+        </head>
+        
+<body>
+    <h1>Get all developers</h1> </br>
+    <h2> 
+        <a href="/">Insert new task/developer</a>
+        <a href = "/getTask" >Get task</a>         
+        <a href = "/deleteTask" >Delete task</a>
+        <a href = "/updateTaskStatus" >Update task status</a><br>
+    </h2>
+    <table>
+        <tr>
+            <td>Developer ID</td>
+            <td>First name</td>
+            <td>Last name</td>
+            <td>Level</td>
+            <td>State</td>
+            <td>Suburb </td>
+            <td>Street </td>
+            <td>Unit </td>
+        </tr>
+        <% for (let i=0;i<developDb.length;i++){ %>
+            <tr>
+                <td> <%= developDb[i]._id %> </td>
+                <td> <%= developDb[i].name.firstName %> </td>
+                <td> <%= developDb[i].name.lastName %> </td>
+                <td><%= developDb[i].level %></td>
+                <td><%= developDb[i].address.State %></td>
+                <td><%= developDb[i].address.Suburb %></td>
+                <td><%= developDb[i].address.Street %></td>
+                <td><%= developDb[i].address.Unit %></td>
+            </tr>
+            <%}%>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
