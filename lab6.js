@@ -7,7 +7,8 @@ let bodyParser=require('body-parser');
 let Developer=require('./models/developers'); //reference to the schema/module 
 let Task=require('./models/tasks');
                                     //DB name
-let url = "mongodb://localhost:27017/week6lab";
+//let url = "mongodb://localhost:27017/week6lab";
+let  url = "mongodb://" + process.argv[2] +  ":27017/";
 
 
 let viewsPath=__dirname+"/views/";
